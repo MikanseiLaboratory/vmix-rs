@@ -25,7 +25,7 @@ anyhow = "1.0.69"
 
 # HTTP dependencies
 tokio = { version = "1.25.0", default-features = false }
-shiguredo_http11 = { version = "2026.1.0-canary.3", git = "https://github.com/shiguredo/http11-rs", branch = "develop" }
+shiguredo_http11 = "2026.6.1"
 async-trait = "0.1"
 
 # Other

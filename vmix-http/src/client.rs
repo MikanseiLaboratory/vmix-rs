@@ -53,12 +53,12 @@ impl HttpVmixClient {
         let uri = format!("{}{}", path, query_string);
 
         // Create HTTP request
-        let request = Request::new("GET", &uri)
-            .header("Host", &format!("{}:{}", self.host, self.port))
-            .header("Connection", "close");
+        let request = Request::new("GET", &uri)?
+            .header("Host", &format!("{}:{}", self.host, self.port))?
+            .header("Connection", "close")?;
 
         // Encode request
-        let request_bytes = request.encode();
+        let request_bytes = request.encode()?;
 
         // Connect to server
         let addr = format!("{}:{}", self.host, self.port);
@@ -68,86 +68,34 @@ impl HttpVmixClient {
         stream.write_all(&request_bytes).await?;
         stream.flush().await?;
 
-        // Read response
+        // Read and decode the full response (headers + body)
         let mut decoder = ResponseDecoder::new();
         let mut temp_buffer = [0u8; 8192];
-        let mut response_opt = None;
-
-        // Read until we get a complete response
-        loop {
-            let read_timeout = timeout(self.request_timeout, stream.read(&mut temp_buffer)).await?;
-            match read_timeout {
-                Ok(0) => break, // EOF
-                Ok(n) => {
-                    decoder.feed(&temp_buffer[..n])?;
-
-                    // Try to decode response
-                    if let Some(response) = decoder.decode()? {
-                        response_opt = Some(response);
-                        break;
-                    }
-                }
-                Err(e) => return Err(anyhow::anyhow!("Failed to read response: {}", e)),
+        let response = loop {
+            let n = timeout(self.request_timeout, stream.read(&mut temp_buffer)).await??;
+            if n == 0 {
+                // Close-delimited bodies complete only after EOF is marked.
+                decoder.mark_eof();
+                break decoder
+                    .decode()?
+                    .ok_or_else(|| anyhow::anyhow!("Failed to decode response"))?;
             }
-        }
 
-        let response = response_opt.ok_or_else(|| anyhow::anyhow!("Failed to decode response"))?;
+            decoder.feed(&temp_buffer[..n])?;
+            if let Some(response) = decoder.decode()? {
+                break response;
+            }
+        };
 
         // Check status code
-        if !(200..300).contains(&response.status_code) {
+        if !(200..300).contains(&response.status_code()) {
             return Err(anyhow::anyhow!(
                 "HTTP request failed with status: {}",
-                response.status_code
+                response.status_code()
             ));
         }
 
-        // Read body
-        // The decoder has already consumed the headers, so we need to read the body separately
-        // Check if there's a body based on Content-Length or Transfer-Encoding
-        let mut body = Vec::new();
-
-        // Try to get Content-Length from headers
-        let content_length = response
-            .headers
-            .iter()
-            .find(|(name, _)| name.eq_ignore_ascii_case("content-length"))
-            .and_then(|(_, value)| value.parse::<usize>().ok());
-
-        if let Some(len) = content_length {
-            // Read exactly len bytes
-            let mut remaining = len;
-            while remaining > 0 {
-                let to_read = remaining.min(temp_buffer.len());
-                let read_timeout = timeout(
-                    self.request_timeout,
-                    stream.read(&mut temp_buffer[..to_read]),
-                )
-                .await?;
-                match read_timeout {
-                    Ok(0) => break, // EOF
-                    Ok(n) => {
-                        body.extend_from_slice(&temp_buffer[..n]);
-                        remaining -= n;
-                    }
-                    Err(e) => return Err(anyhow::anyhow!("Failed to read body: {}", e)),
-                }
-            }
-        } else {
-            // No Content-Length, read until EOF (Connection: close)
-            loop {
-                let read_timeout =
-                    timeout(self.request_timeout, stream.read(&mut temp_buffer)).await?;
-                match read_timeout {
-                    Ok(0) => break, // EOF
-                    Ok(n) => {
-                        body.extend_from_slice(&temp_buffer[..n]);
-                    }
-                    Err(e) => return Err(anyhow::anyhow!("Failed to read body: {}", e)),
-                }
-            }
-        }
-
-        Ok(body)
+        Ok(response.body_bytes().unwrap_or_default().to_vec())
     }
 
     pub async fn execute_function(
