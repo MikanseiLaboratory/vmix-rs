@@ -40,7 +40,7 @@ pub struct TallyResponse {
     pub status: Status,
     pub body: HashMap<InputNumber, TallyData>,
 }
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum TallyData {
     OFF,
     PROGRAM,
