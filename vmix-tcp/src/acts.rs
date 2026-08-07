@@ -80,6 +80,10 @@ pub enum ActivatorsData {
     Overlay2(InputNumber, bool),
     Overlay3(InputNumber, bool),
     Overlay4(InputNumber, bool),
+    Overlay5(InputNumber, bool),
+    Overlay6(InputNumber, bool),
+    Overlay7(InputNumber, bool),
+    Overlay8(InputNumber, bool),
     ReplayPlaying(bool),
     /// Unknown activator type with raw data
     Unknown(Vec<String>),
@@ -167,6 +171,10 @@ fn create_input_bool_variant(
         "Overlay2" => Ok(ActivatorsData::Overlay2(input_num, is_active_val)),
         "Overlay3" => Ok(ActivatorsData::Overlay3(input_num, is_active_val)),
         "Overlay4" => Ok(ActivatorsData::Overlay4(input_num, is_active_val)),
+        "Overlay5" => Ok(ActivatorsData::Overlay5(input_num, is_active_val)),
+        "Overlay6" => Ok(ActivatorsData::Overlay6(input_num, is_active_val)),
+        "Overlay7" => Ok(ActivatorsData::Overlay7(input_num, is_active_val)),
+        "Overlay8" => Ok(ActivatorsData::Overlay8(input_num, is_active_val)),
         _ => Ok(ActivatorsData::Unknown(values.to_vec())),
     }
 }
@@ -279,7 +287,8 @@ impl TryFrom<&[String]> for ActivatorsData {
             | "InputPreviewMix15" | "InputPreviewMix16" | "InputPlaying" | "InputAudio"
             | "InputSolo" | "InputBusAAudio" | "InputBusBAudio" | "InputBusCAudio"
             | "InputBusDAudio" | "InputBusEAudio" | "InputBusFAudio" | "InputBusGAudio"
-            | "InputMasterAudio" | "Overlay1" | "Overlay2" | "Overlay3" | "Overlay4" => {
+            | "InputMasterAudio" | "Overlay1" | "Overlay2" | "Overlay3" | "Overlay4"
+            | "Overlay5" | "Overlay6" | "Overlay7" | "Overlay8" => {
                 create_input_bool_variant(value, 1)
             }
 
@@ -301,6 +310,43 @@ impl TryFrom<&[String]> for ActivatorsData {
             _ => {
                 // Store unknown activators with raw data instead of failing
                 Ok(ActivatorsData::Unknown(value.to_vec()))
+            }
+        }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn parse(parts: &[&str]) -> ActivatorsData {
+        let values: Vec<String> = parts.iter().map(|s| s.to_string()).collect();
+        ActivatorsData::try_from(values.as_slice()).unwrap()
+    }
+
+    #[test]
+    fn parses_overlay1_through_8() {
+        for (name, active) in [
+            ("Overlay1", true),
+            ("Overlay2", false),
+            ("Overlay3", true),
+            ("Overlay4", false),
+            ("Overlay5", true),
+            ("Overlay6", false),
+            ("Overlay7", true),
+            ("Overlay8", false),
+        ] {
+            let data = parse(&[name, "2", if active { "1" } else { "0" }]);
+            match (name, data) {
+                ("Overlay1", ActivatorsData::Overlay1(2, a)) => assert_eq!(a, active),
+                ("Overlay2", ActivatorsData::Overlay2(2, a)) => assert_eq!(a, active),
+                ("Overlay3", ActivatorsData::Overlay3(2, a)) => assert_eq!(a, active),
+                ("Overlay4", ActivatorsData::Overlay4(2, a)) => assert_eq!(a, active),
+                ("Overlay5", ActivatorsData::Overlay5(2, a)) => assert_eq!(a, active),
+                ("Overlay6", ActivatorsData::Overlay6(2, a)) => assert_eq!(a, active),
+                ("Overlay7", ActivatorsData::Overlay7(2, a)) => assert_eq!(a, active),
+                ("Overlay8", ActivatorsData::Overlay8(2, a)) => assert_eq!(a, active),
+                other => panic!("unexpected parse for {name}: {other:?}"),
             }
         }
     }
