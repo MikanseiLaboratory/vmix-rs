@@ -347,6 +347,9 @@ pub struct Overlays {
 pub struct OverlaysOverlay {
     #[serde(rename = "@number")]
     pub number: String,
+
+    #[serde(rename = "$value", default)]
+    pub input: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
@@ -535,4 +538,39 @@ pub enum State {
 
     #[serde(rename = "Completed")]
     Completed,
+}
+
+#[cfg(all(test, feature = "xml"))]
+mod overlay_tests {
+    use super::*;
+    use quick_xml::de::from_str;
+
+    #[test]
+    fn parses_overlays_1_through_8_with_active_input() {
+        let xml = r#"<overlays>
+            <overlay number="1" />
+            <overlay number="2" />
+            <overlay number="3" />
+            <overlay number="4" />
+            <overlay number="5">2</overlay>
+            <overlay number="6" />
+            <overlay number="7" />
+            <overlay number="8">5</overlay>
+        </overlays>"#;
+
+        let overlays: Overlays = from_str(xml).expect("overlays should parse");
+        assert_eq!(overlays.overlay.len(), 8);
+        assert_eq!(overlays.overlay[0].number, "1");
+        assert!(
+            overlays.overlay[0]
+                .input
+                .as_deref()
+                .unwrap_or("")
+                .is_empty()
+        );
+        assert_eq!(overlays.overlay[4].number, "5");
+        assert_eq!(overlays.overlay[4].input.as_deref(), Some("2"));
+        assert_eq!(overlays.overlay[7].number, "8");
+        assert_eq!(overlays.overlay[7].input.as_deref(), Some("5"));
+    }
 }
