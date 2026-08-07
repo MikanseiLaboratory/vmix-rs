@@ -561,7 +561,13 @@ mod overlay_tests {
         let overlays: Overlays = from_str(xml).expect("overlays should parse");
         assert_eq!(overlays.overlay.len(), 8);
         assert_eq!(overlays.overlay[0].number, "1");
-        assert!(overlays.overlay[0].input.as_deref().unwrap_or("").is_empty());
+        assert!(
+            overlays.overlay[0]
+                .input
+                .as_deref()
+                .unwrap_or("")
+                .is_empty()
+        );
         assert_eq!(overlays.overlay[4].number, "5");
         assert_eq!(overlays.overlay[4].input.as_deref(), Some("2"));
         assert_eq!(overlays.overlay[7].number, "8");
