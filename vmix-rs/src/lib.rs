@@ -1,6 +1,14 @@
 // Re-export vmix-core (always available)
 pub use vmix_core;
 
+/// Shortcut function catalog scraped from the vMix help reference.
+///
+/// Available with the default features and with `full`. The data is embedded
+/// at compile time, so reading it does not touch the network.
+pub mod shortcuts {
+    pub use vmix_shortcuts::*;
+}
+
 // Re-export vmix-tcp when enabled
 #[cfg(feature = "tcp")]
 pub use vmix_tcp;
