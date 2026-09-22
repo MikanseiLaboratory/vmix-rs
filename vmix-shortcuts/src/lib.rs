@@ -104,12 +104,34 @@ impl From<RawShortcut> for Shortcut {
     }
 }
 
-/// Functions missing from the official table. Matches the vmix-utility scraper.
+/// Functions missing from the official table.
+///
+/// Transition names match the vMix UI. `Duration` is a Developer API parameter
+/// and is not listed in the Shortcut Function Reference. This list matches
+/// vmix-utility as of 2.2.8.
 pub fn overrides() -> Vec<RawShortcut> {
+    let transition = ["Input", "Mix", "Duration"];
     vec![
         raw("Cut", "Cut", &["Input", "Mix"]),
-        raw("Fade", "Fade", &["Input", "Mix", "Duration"]),
+        raw("Fade", "Fade", &transition),
+        raw("Zoom", "Zoom", &transition),
+        raw("Wipe", "Wipe", &transition),
+        raw("Slide", "Slide", &transition),
+        raw("Fly", "Fly", &transition),
+        raw("CrossZoom", "CrossZoom", &transition),
+        raw("FlyRotate", "FlyRotate", &transition),
+        raw("Cube", "Cube", &transition),
+        raw("CubeZoom", "CubeZoom", &transition),
+        raw("VerticalWipe", "VerticalWipe", &transition),
+        raw("VerticalSlide", "VerticalSlide", &transition),
         raw("Merge", "Merge", &["Input", "Duration"]),
+        raw("WipeReverse", "WipeReverse", &transition),
+        raw("SlideReverse", "SlideReverse", &transition),
+        raw("VerticalWipeReverse", "VerticalWipeReverse", &transition),
+        raw("VerticalSlideReverse", "VerticalSlideReverse", &transition),
+        raw("BarnDoor", "BarnDoor", &transition),
+        raw("RollerDoor", "RollerDoor", &transition),
+        raw("AlphaFade", "AlphaFade", &transition),
     ]
 }
 
@@ -329,6 +351,7 @@ mod tests {
         for name in [
             "Cut",
             "Fade",
+            "Zoom",
             "Merge",
             "OverlayInput5",
             "OverlayInput6",
@@ -353,6 +376,10 @@ mod tests {
         assert_eq!(
             find("Merge").unwrap().parameters,
             vec![Parameter::Input, Parameter::Duration]
+        );
+        assert_eq!(
+            find("Zoom").unwrap().parameters,
+            vec![Parameter::Input, Parameter::Mix, Parameter::Duration]
         );
         assert_eq!(
             find("OverlayInput1Off").unwrap().parameters,
