@@ -69,6 +69,10 @@ fn main() -> ExitCode {
         eprintln!("failed to write {}: {error}", output.display());
         return ExitCode::from(1);
     }
-    println!("wrote {} functions to {}", shortcuts.len(), output.display());
+    println!(
+        "wrote {} functions to {}",
+        shortcuts.len(),
+        output.display()
+    );
     ExitCode::SUCCESS
 }

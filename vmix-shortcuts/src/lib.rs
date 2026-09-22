@@ -133,8 +133,12 @@ pub fn parse_reference_html(html: &str) -> Vec<RawShortcut> {
         if cells.is_empty() {
             continue;
         }
-        if cells[0].to_ascii_lowercase().contains("background-color: #ccffcc")
-            || cells[0].to_ascii_lowercase().contains("background-color:#ccffcc")
+        if cells[0]
+            .to_ascii_lowercase()
+            .contains("background-color: #ccffcc")
+            || cells[0]
+                .to_ascii_lowercase()
+                .contains("background-color:#ccffcc")
         {
             continue;
         }
@@ -217,9 +221,7 @@ fn html_cells(row: &str) -> Vec<String> {
 }
 
 fn find_at(haystack: &str, needle: &str, from: usize) -> Option<usize> {
-    haystack[from..]
-        .find(needle)
-        .map(|offset| from + offset)
+    haystack[from..].find(needle).map(|offset| from + offset)
 }
 
 fn cell_text(cell: &str) -> String {
@@ -297,10 +299,20 @@ mod tests {
     fn parser_skips_heading_rows_and_splits_parameters() {
         let rows = parse_reference_html(FIXTURE);
         assert!(rows.iter().any(|row| row.name == "Cut"));
-        assert!(rows.iter().any(|row| row.name == "Fade" && row.parameters.as_ref().unwrap().len() == 3));
-        assert!(!rows.iter().any(|row| row.name == "Name" || row.name == "General"));
+        assert!(
+            rows.iter()
+                .any(|row| row.name == "Fade" && row.parameters.as_ref().unwrap().len() == 3)
+        );
+        assert!(
+            !rows
+                .iter()
+                .any(|row| row.name == "Name" || row.name == "General")
+        );
         let audio = rows.iter().find(|row| row.name == "Audio").unwrap();
-        assert_eq!(audio.parameters.as_deref(), Some(&["Input".to_string()][..]));
+        assert_eq!(
+            audio.parameters.as_deref(),
+            Some(&["Input".to_string()][..])
+        );
         let text = rows.iter().find(|row| row.name == "SetText").unwrap();
         assert!(text.description.contains("Value = Text"));
         assert!(!text.description.contains('\n'));
@@ -310,7 +322,10 @@ mod tests {
 
     #[test]
     fn embedded_catalog_contains_help29_overlay_and_stinger_ranges() {
-        assert!(all().len() > 700, "help29 catalog should be hundreds of functions");
+        assert!(
+            all().len() > 700,
+            "help29 catalog should be hundreds of functions"
+        );
         for name in [
             "Cut",
             "Fade",
