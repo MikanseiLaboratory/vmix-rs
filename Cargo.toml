@@ -3,6 +3,7 @@ members = [
     "vmix-core",
     "vmix-tcp",
     "vmix-http",
+    "vmix-shortcuts",
     "vmix-rs",
 ]
 resolver = "2"

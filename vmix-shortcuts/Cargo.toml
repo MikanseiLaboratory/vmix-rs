@@ -1,0 +1,26 @@
+[package]
+name = "vmix-shortcuts"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+repository.workspace = true
+license.workspace = true
+description = "Embedded vMix shortcut function catalog"
+
+[dependencies]
+serde = { workspace = true, features = ["derive", "std"] }
+serde_json = "1"
+
+[dependencies.ureq]
+version = "2.12"
+optional = true
+default-features = false
+features = ["tls"]
+
+[features]
+scrape = ["dep:ureq"]
+
+[[bin]]
+name = "scrape"
+path = "src/bin/scrape.rs"
+required-features = ["scrape"]

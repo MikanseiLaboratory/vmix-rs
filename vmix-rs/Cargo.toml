@@ -9,6 +9,7 @@ description = "vMix HTTP/TCP API Library"
 readme = "README.md"
 
 [dependencies]
+vmix-shortcuts = { path = "../vmix-shortcuts", version = "0.2.2" }
 vmix-core = { path = "../vmix-core", version = "0.2.2", features = ["xml"] }
 vmix-tcp = { path = "../vmix-tcp", version = "0.2.2", optional = true }
 vmix-http = { path = "../vmix-http", version = "0.2.2", optional = true }
