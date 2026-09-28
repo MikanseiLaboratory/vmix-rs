@@ -5,7 +5,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Fade",
@@ -14,7 +15,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Zoom",
@@ -23,7 +25,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Wipe",
@@ -32,7 +35,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Slide",
@@ -41,7 +45,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Fly",
@@ -50,7 +55,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "CrossZoom",
@@ -59,7 +65,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "FlyRotate",
@@ -68,7 +75,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Cube",
@@ -77,7 +85,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "CubeZoom",
@@ -86,7 +95,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "VerticalWipe",
@@ -95,7 +105,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "VerticalSlide",
@@ -104,7 +115,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Merge",
@@ -112,7 +124,8 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "WipeReverse",
@@ -121,7 +134,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SlideReverse",
@@ -130,7 +144,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "VerticalWipeReverse",
@@ -139,7 +154,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "VerticalSlideReverse",
@@ -148,7 +164,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "BarnDoor",
@@ -157,7 +174,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "RollerDoor",
@@ -166,7 +184,8 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "AlphaFade",
@@ -175,92 +194,106 @@
       "Input",
       "Mix",
       "Duration"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "ActivatorRefresh",
     "Description": "Refresh all activator device lights and controls",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "General"
   },
   {
     "Name": "CallManagerShowHide",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "General"
   },
   {
     "Name": "KeyPress",
     "Description": "Value = Key",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "SendKeys",
     "Description": "Send keys to active window      Value = Keys",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "SetDynamicValue1",
     "Description": "Set Dynamic Value to use when specifying Dynamic1 as a shortcut value.      Value = Value",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "SetDynamicValue2",
     "Description": "Set Dynamic Value to use when specifying Dynamic2 as a shortcut value.      Value = Value",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "SetDynamicValue3",
     "Description": "Set Dynamic Value to use when specifying Dynamic3 as a shortcut value.      Value = Value",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "SetDynamicValue4",
     "Description": "Set Dynamic Value to use when specifying Dynamic4 as a shortcut value.      Value = Value",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "General"
   },
   {
     "Name": "Undo",
     "Description": "Undo closing Input.",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "General"
   },
   {
     "Name": "Audio",
     "Description": "Toggle Audio Mute On/Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioAuto",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioAutoOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioAutoOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioBus",
@@ -268,7 +301,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioBusOff",
@@ -276,7 +310,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioBusOn",
@@ -284,7 +319,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioChannelMatrixApplyPreset",
@@ -292,26 +328,30 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioMixerShowHide",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "AudioOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioPluginOff",
@@ -319,7 +359,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioPluginOn",
@@ -327,7 +368,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioPluginOnOff",
@@ -335,7 +377,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "AudioPluginShow",
@@ -343,227 +386,262 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudio",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioOff",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioOn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioPluginOff",
     "Description": "Turn off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioPluginOn",
     "Description": "Turn on Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioPluginOnOff",
     "Description": "Toggle on/off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusAAudioPluginShow",
     "Description": "Show Audio Plugin Editor, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudio",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioOff",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioOn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioPluginOff",
     "Description": "Turn off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioPluginOn",
     "Description": "Turn on Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioPluginOnOff",
     "Description": "Toggle on/off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusBAudioPluginShow",
     "Description": "Show Audio Plugin Editor, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudio",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioOff",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioOn",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioPluginOff",
     "Description": "Turn off Audio Plugin, starting from 1      Value = Bus,PluginNumber",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioPluginOn",
     "Description": "Turn on Audio Plugin, starting from 1      Value = Bus,PluginNumber",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioPluginOnOff",
     "Description": "Toggle on/off Audio Plugin, starting from 1      Value = Bus,PluginNumber",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXAudioPluginShow",
     "Description": "Show Audio Plugin Editor, starting from 1      Value = Bus,PluginNumber",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSendToMaster",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSendToMasterOff",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSendToMasterOn",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSolo",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSoloOff",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "BusXSoloOn",
     "Description": "M,A,B,C,D,E,F,G      Value = Bus",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudio",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioOff",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioOn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioPluginOff",
     "Description": "Turn off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioPluginOn",
     "Description": "Turn on Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioPluginOnOff",
     "Description": "Toggle on/off Audio Plugin, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "MasterAudioPluginShow",
     "Description": "Show Audio Plugin Editor, starting from 1      Value = Plugin Number",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBalance",
@@ -571,105 +649,120 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusAVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusAVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusBVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusBVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusCVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusCVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusDVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusDVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusEVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusEVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusFVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusFVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusGVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetBusGVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetGain",
@@ -677,7 +770,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetGainChannel1",
@@ -685,7 +779,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetGainChannel2",
@@ -693,28 +788,32 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetHeadphonesVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetMasterVolume",
     "Description": "Value = Volume 0-100",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetMasterVolumeFade",
     "Description": "Set volume gradually over x milliseconds.      Value = Volume 0-100,Milliseconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolume",
@@ -722,7 +821,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixer",
@@ -730,7 +830,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerA",
@@ -738,7 +839,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerB",
@@ -746,7 +848,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerC",
@@ -754,7 +857,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerD",
@@ -762,7 +866,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerE",
@@ -770,7 +875,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerF",
@@ -778,7 +884,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerG",
@@ -786,7 +893,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeBusMixerM",
@@ -794,7 +902,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannel1",
@@ -802,7 +911,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannel2",
@@ -810,7 +920,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer",
@@ -818,7 +929,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer1",
@@ -826,7 +938,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer10",
@@ -834,7 +947,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer11",
@@ -842,7 +956,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer12",
@@ -850,7 +965,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer13",
@@ -858,7 +974,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer14",
@@ -866,7 +983,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer15",
@@ -874,7 +992,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer16",
@@ -882,7 +1001,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer2",
@@ -890,7 +1010,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer3",
@@ -898,7 +1019,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer4",
@@ -906,7 +1028,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer5",
@@ -914,7 +1037,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer6",
@@ -922,7 +1046,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer7",
@@ -930,7 +1055,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer8",
@@ -938,7 +1064,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeChannelMixer9",
@@ -946,7 +1073,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SetVolumeFade",
@@ -954,192 +1082,220 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "Solo",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SoloAllOff",
     "Description": "Turn off Solo for all Inputs and Busses",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Audio"
   },
   {
     "Name": "SoloOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SoloOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SoloPFL",
     "Description": "Toggle between AFL or PFL mode for Solo",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SoloPFLOff",
     "Description": "Turn off PFL mode for Solo",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "SoloPFLOn",
     "Description": "Turn on PFL mode for Solo",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Audio"
   },
   {
     "Name": "CutDirect",
     "Description": "Cuts the input directly to Output without changing Preview",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "FadeToBlack",
     "Description": "Toggle FTB On/Off",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Transition"
   },
   {
     "Name": "QuickPlay",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetFader",
     "Description": "Set Master Fader T-Bar, 255 will cut to Preview      Value = Fader 0-255",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput1",
     "Description": "Assign GT Input as animation source for Stinger 1",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput2",
     "Description": "Assign GT Input as animation source for Stinger 2",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput3",
     "Description": "Assign GT Input as animation source for Stinger 3",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput4",
     "Description": "Assign GT Input as animation source for Stinger 4",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput5",
     "Description": "Assign GT Input as animation source for Stinger 5",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput6",
     "Description": "Assign GT Input as animation source for Stinger 6",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput7",
     "Description": "Assign GT Input as animation source for Stinger 7",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetStingerGTInput8",
     "Description": "Assign GT Input as animation source for Stinger 8",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionDuration1",
     "Description": "Change Transition Duration for Button 1      Value = Duration MS",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionDuration2",
     "Description": "Change Transition Duration for Button 2      Value = Duration MS",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionDuration3",
     "Description": "Change Transition Duration for Button 3      Value = Duration MS",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionDuration4",
     "Description": "Change Transition Duration for Button 4      Value = Duration MS",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionEffect1",
     "Description": "Change Transition for Button 1      Value = Transition",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionEffect2",
     "Description": "Change Transition for Button 2      Value = Transition",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionEffect3",
     "Description": "Change Transition for Button 3      Value = Transition",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "SetTransitionEffect4",
     "Description": "Change Transition for Button 4      Value = Transition",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger1",
@@ -1147,7 +1303,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger2",
@@ -1155,7 +1312,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger3",
@@ -1163,7 +1321,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger4",
@@ -1171,7 +1330,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger5",
@@ -1179,7 +1339,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger6",
@@ -1187,7 +1348,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger7",
@@ -1195,7 +1357,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Stinger8",
@@ -1203,42 +1366,50 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Transition"
   },
   {
     "Name": "Transition1",
     "Description": "Clicks one of the four Transition buttons in the main vMix window.",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Transition"
   },
   {
     "Name": "Transition2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Transition"
   },
   {
     "Name": "Transition3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Transition"
   },
   {
     "Name": "Transition4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Transition"
   },
   {
     "Name": "Fullscreen",
     "Description": "Toggles Fullscreen On or Off",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "FullscreenOff",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "FullscreenOn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "SetOutput2",
@@ -1247,7 +1418,8 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SetOutput3",
@@ -1256,7 +1428,8 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SetOutput4",
@@ -1265,7 +1438,8 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SetOutputExternal2",
@@ -1274,7 +1448,8 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SetOutputFullscreen",
@@ -1283,7 +1458,8 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SetOutputFullscreen2",
@@ -1292,14 +1468,16 @@
       "Value",
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "Snapshot",
     "Description": "Create a snapshot image of the current Output. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg      Value = Value",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "SnapshotInput",
@@ -1307,129 +1485,150 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StartExternal",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartMultiCorder",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartSRTOutput",
     "Description": "Optional output number starting from 0. Leave blank to control Output 1 only.      Value = Output",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StartStopExternal",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartStopMultiCorder",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartStopRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StartStopSRTOutput",
     "Description": "Optional output number starting from 0. Leave blank to control Output 1 only.      Value = Output",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StartStopStreaming",
     "Description": "Optional stream number starting from 0. Leave blank to control all streams.      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StartStreaming",
     "Description": "Optional stream number starting from 0. Leave blank to control all streams.      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StopExternal",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StopMultiCorder",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StopRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Output"
   },
   {
     "Name": "StopSRTOutput",
     "Description": "Optional output number starting from 0. Leave blank to control Output 1 only.      Value = Output",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StopStreaming",
     "Description": "Optional stream number starting from 0. Leave blank to control all streams.      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StreamingSetKey",
     "Description": "Set Key on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,mystreamkey      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StreamingSetPassword",
     "Description": "Set Password on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,password      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StreamingSetURL",
     "Description": "Set URL on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,rtmp://myurl/      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "StreamingSetUsername",
     "Description": "Set Username on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,username      Value = Stream",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "WriteDurationToRecordingLog",
     "Description": "Write current recording duration to log file with optional tag text Value.      Value = Tag Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Output"
   },
   {
     "Name": "AdjustCountdown",
@@ -1437,7 +1636,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "ChangeCountdown",
@@ -1445,42 +1645,48 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "NextTitlePreset",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "PauseCountdown",
     "Description": "Pause or Resume Countdown or if complete, Start from beginning.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "PauseRender",
     "Description": "Freeze Title Input while making multiple updates",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "PreviousTitlePreset",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "ResumeRender",
     "Description": "Resume Title Input rendering after making multiple updates",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SelectTitlePreset",
@@ -1488,7 +1694,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetColor",
@@ -1496,7 +1703,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetCountdown",
@@ -1504,7 +1712,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetImage",
@@ -1512,28 +1721,32 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetImageVisible",
     "Description": "Toggle Image Visibility in Title      SelectedIndex or SelectedName can be used to select image.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetImageVisibleOff",
     "Description": "Hide Image in Title      SelectedIndex or SelectedName can be used to select image.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetImageVisibleOn",
     "Description": "Show Image in Title      SelectedIndex or SelectedName can be used to select image.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetText",
@@ -1541,7 +1754,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetTextColour",
@@ -1549,28 +1763,32 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetTextVisible",
     "Description": "Toggle Text Visibility in Title      SelectedIndex or SelectedName can be used to select text field.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetTextVisibleOff",
     "Description": "Hide Text in Title      SelectedIndex or SelectedName can be used to select text field.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetTextVisibleOn",
     "Description": "Show Text in Title      SelectedIndex or SelectedName can be used to select text field.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SetTickerSpeed",
@@ -1578,28 +1796,32 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "StartCountdown",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "StopCountdown",
     "Description": "Stop and Reset Countdown",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "SuspendCountdown",
     "Description": "Pause Countdown Only",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "TitleBeginAnimation",
@@ -1607,7 +1829,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Title"
   },
   {
     "Name": "ActiveInput",
@@ -1615,245 +1838,280 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AddInput",
     "Description": "Create a new Input based on information provided in Value.      Video|c:\\path\\to\\video.avi      Image|c:\\path\\to\\image.jpg      Photos|c:\\path\\to\\folder      Title|c:\\path\\to\\title.gtzip      VideoList|c:\\path\\to\\playlist.m3u      Colour|HTMLColor      AudioFile|c:\\path\\to\\audio.wav      Flash|c:\\path\\to\\flash.swf      PowerPoint|c:\\path\\to\\powerpoint.pptx      Value = Type|Filename",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPauseOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPauseOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayFirst",
     "Description": "Toggle automatically playing first item in a List with Transition",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayFirstOff",
     "Description": "Turn Off automatically playing first item in a List with Transition",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayFirstOn",
     "Description": "Turn On automatically playing first item in a List with Transition",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayNext",
     "Description": "Toggle automatically playing next item in a List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayNextOff",
     "Description": "Turn Off automatically playing next item in a List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayNextOn",
     "Description": "Turn On automatically playing next item in a List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoPlayOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoRestartOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "AutoRestartOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ColourCorrectionAuto",
     "Description": "Basic Auto Colour Correction.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ColourCorrectionReset",
     "Description": "Reset Colour Correction to Default Values.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "CreateVirtualInput",
     "Description": "Create a new Virtual Input from the specified Input.",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "DeinterlaceOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "DeinterlaceOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect1",
     "Description": "Toggle Effect 1 On/Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect1Off",
     "Description": "Turn Effect 1 Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect1On",
     "Description": "Turn Effect 1 On",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect2",
     "Description": "Toggle Effect 2 On/Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect2Off",
     "Description": "Turn Effect 2 Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect2On",
     "Description": "Turn Effect 2 On",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect3",
     "Description": "Toggle Effect 3 On/Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect3Off",
     "Description": "Turn Effect 3 Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect3On",
     "Description": "Turn Effect 3 On",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect4",
     "Description": "Toggle Effect 4 On/Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect4Off",
     "Description": "Turn Effect 4 Off",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Effect4On",
     "Description": "Turn Effect 4 On",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "GO",
     "Description": "Trigger GO action on Input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "InputPreviewHide",
     "Description": "Hides large preview of input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "InputPreviewShow",
     "Description": "Shows large preview of input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "InputPreviewShowHide",
     "Description": "Toggles large preview of input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LayerOff",
@@ -1861,7 +2119,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LayerOn",
@@ -1869,7 +2128,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LayerOnOff",
@@ -1877,7 +2137,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListAdd",
@@ -1885,7 +2146,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListExport",
@@ -1893,14 +2155,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListPlayOut",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListRemove",
@@ -1908,105 +2172,120 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListRemoveAll",
     "Description": "Remove all items from List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListShowHide",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ListShuffle",
     "Description": "Shuffle (randomize) List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LivePlayPause",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Loop",
     "Description": "Toggle Loop on Input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LoopOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "LoopOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MarkIn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MarkOut",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MarkReset",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MarkResetIn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MarkResetOut",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MirrorOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MirrorOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MoveInput",
@@ -2014,7 +2293,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MoveLayer",
@@ -2022,42 +2302,48 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "NextItem",
     "Description": "Move to next item in List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "NextPicture",
     "Description": "Move to Next Picture for Photo and PowerPoint Inputs",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Pause",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Play",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "PlayPause",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "PreviewInput",
@@ -2065,52 +2351,60 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "PreviewInputNext",
     "Description": "Send to Preview the next Input",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Input"
   },
   {
     "Name": "PreviewInputPrevious",
     "Description": "Send to Preview the previous Input",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Input"
   },
   {
     "Name": "PreviousItem",
     "Description": "Move to previous item in List",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "PreviousPicture",
     "Description": "Move to Previous Picture for Photo and PowerPoint Inputs",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "RemoveInput",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ResetInput",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "Restart",
     "Description": "Restart selected Input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SaveVideoDelay",
@@ -2118,14 +2412,16 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SelectCategory",
     "Description": "Change to Category according to Value (All,Red,Green,Orange,Purple,Aqua,Blue,Custom1-16,Search)      Value = Category",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SelectIndex",
@@ -2133,7 +2429,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetAlpha",
@@ -2141,7 +2438,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGainB",
@@ -2149,7 +2447,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGainG",
@@ -2157,7 +2456,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGainR",
@@ -2165,7 +2465,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGainRGB",
@@ -2173,7 +2474,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGainY",
@@ -2181,7 +2483,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGammaB",
@@ -2189,7 +2492,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGammaG",
@@ -2197,7 +2501,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGammaR",
@@ -2205,7 +2510,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGammaRGB",
@@ -2213,7 +2519,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCGammaY",
@@ -2221,7 +2528,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCHue",
@@ -2229,7 +2537,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCLiftB",
@@ -2237,7 +2546,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCLiftG",
@@ -2245,7 +2555,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCLiftR",
@@ -2253,7 +2564,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCLiftRGB",
@@ -2261,7 +2573,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCLiftY",
@@ -2269,7 +2582,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCCSaturation",
@@ -2277,7 +2591,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCrop",
@@ -2285,7 +2600,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCropX1",
@@ -2293,7 +2609,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCropX2",
@@ -2301,7 +2618,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCropY1",
@@ -2309,7 +2627,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetCropY2",
@@ -2317,35 +2636,40 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetDynamicInput1",
     "Description": "Set Dynamic Input from Input Name or Number      Value = Input",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetDynamicInput2",
     "Description": "Set Dynamic Input from Input Name or Number      Value = Input",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetDynamicInput3",
     "Description": "Set Dynamic Input from Input Name or Number      Value = Input",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetDynamicInput4",
     "Description": "Set Dynamic Input from Input Name or Number      Value = Input",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetEffect1Strength",
@@ -2353,7 +2677,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetEffect2Strength",
@@ -2361,7 +2686,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetEffect3Strength",
@@ -2369,7 +2695,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetEffect4Strength",
@@ -2377,7 +2704,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetFrameDelay",
@@ -2385,7 +2713,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetInputName",
@@ -2393,7 +2722,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer",
@@ -2401,7 +2731,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Crop",
@@ -2409,7 +2740,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10CropX1",
@@ -2417,7 +2749,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10CropX2",
@@ -2425,7 +2758,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10CropY1",
@@ -2433,7 +2767,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10CropY2",
@@ -2441,7 +2776,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Height",
@@ -2449,7 +2785,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10PanX",
@@ -2457,7 +2794,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10PanY",
@@ -2465,7 +2803,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Rectangle",
@@ -2473,7 +2812,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Width",
@@ -2481,7 +2821,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10X",
@@ -2489,7 +2830,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Y",
@@ -2497,7 +2839,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer10Zoom",
@@ -2505,7 +2848,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Crop",
@@ -2513,7 +2857,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1CropX1",
@@ -2521,7 +2866,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1CropX2",
@@ -2529,7 +2875,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1CropY1",
@@ -2537,7 +2884,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1CropY2",
@@ -2545,7 +2893,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Height",
@@ -2553,7 +2902,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1PanX",
@@ -2561,7 +2911,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1PanY",
@@ -2569,7 +2920,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Rectangle",
@@ -2577,7 +2929,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Width",
@@ -2585,7 +2938,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1X",
@@ -2593,7 +2947,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Y",
@@ -2601,7 +2956,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer1Zoom",
@@ -2609,7 +2965,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Crop",
@@ -2617,7 +2974,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2CropX1",
@@ -2625,7 +2983,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2CropX2",
@@ -2633,7 +2992,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2CropY1",
@@ -2641,7 +3001,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2CropY2",
@@ -2649,7 +3010,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Height",
@@ -2657,7 +3019,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2PanX",
@@ -2665,7 +3028,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2PanY",
@@ -2673,7 +3037,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Rectangle",
@@ -2681,7 +3046,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Width",
@@ -2689,7 +3055,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2X",
@@ -2697,7 +3064,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Y",
@@ -2705,7 +3073,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer2Zoom",
@@ -2713,7 +3082,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Crop",
@@ -2721,7 +3091,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3CropX1",
@@ -2729,7 +3100,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3CropX2",
@@ -2737,7 +3109,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3CropY1",
@@ -2745,7 +3118,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3CropY2",
@@ -2753,7 +3127,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Height",
@@ -2761,7 +3136,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3PanX",
@@ -2769,7 +3145,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3PanY",
@@ -2777,7 +3154,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Rectangle",
@@ -2785,7 +3163,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Width",
@@ -2793,7 +3172,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3X",
@@ -2801,7 +3181,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Y",
@@ -2809,7 +3190,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer3Zoom",
@@ -2817,7 +3199,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Crop",
@@ -2825,7 +3208,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4CropX1",
@@ -2833,7 +3217,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4CropX2",
@@ -2841,7 +3226,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4CropY1",
@@ -2849,7 +3235,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4CropY2",
@@ -2857,7 +3244,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Height",
@@ -2865,7 +3253,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4PanX",
@@ -2873,7 +3262,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4PanY",
@@ -2881,7 +3271,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Rectangle",
@@ -2889,7 +3280,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Width",
@@ -2897,7 +3289,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4X",
@@ -2905,7 +3298,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Y",
@@ -2913,7 +3307,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer4Zoom",
@@ -2921,7 +3316,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Crop",
@@ -2929,7 +3325,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5CropX1",
@@ -2937,7 +3334,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5CropX2",
@@ -2945,7 +3343,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5CropY1",
@@ -2953,7 +3352,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5CropY2",
@@ -2961,7 +3361,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Height",
@@ -2969,7 +3370,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5PanX",
@@ -2977,7 +3379,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5PanY",
@@ -2985,7 +3388,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Rectangle",
@@ -2993,7 +3397,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Width",
@@ -3001,7 +3406,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5X",
@@ -3009,7 +3415,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Y",
@@ -3017,7 +3424,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer5Zoom",
@@ -3025,7 +3433,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Crop",
@@ -3033,7 +3442,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6CropX1",
@@ -3041,7 +3451,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6CropX2",
@@ -3049,7 +3460,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6CropY1",
@@ -3057,7 +3469,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6CropY2",
@@ -3065,7 +3478,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Height",
@@ -3073,7 +3487,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6PanX",
@@ -3081,7 +3496,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6PanY",
@@ -3089,7 +3505,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Rectangle",
@@ -3097,7 +3514,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Width",
@@ -3105,7 +3523,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6X",
@@ -3113,7 +3532,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Y",
@@ -3121,7 +3541,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer6Zoom",
@@ -3129,7 +3550,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Crop",
@@ -3137,7 +3559,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7CropX1",
@@ -3145,7 +3568,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7CropX2",
@@ -3153,7 +3577,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7CropY1",
@@ -3161,7 +3586,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7CropY2",
@@ -3169,7 +3595,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Height",
@@ -3177,7 +3604,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7PanX",
@@ -3185,7 +3613,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7PanY",
@@ -3193,7 +3622,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Rectangle",
@@ -3201,7 +3631,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Width",
@@ -3209,7 +3640,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7X",
@@ -3217,7 +3649,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Y",
@@ -3225,7 +3658,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer7Zoom",
@@ -3233,7 +3667,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Crop",
@@ -3241,7 +3676,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8CropX1",
@@ -3249,7 +3685,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8CropX2",
@@ -3257,7 +3694,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8CropY1",
@@ -3265,7 +3703,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8CropY2",
@@ -3273,7 +3712,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Height",
@@ -3281,7 +3721,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8PanX",
@@ -3289,7 +3730,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8PanY",
@@ -3297,7 +3739,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Rectangle",
@@ -3305,7 +3748,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Width",
@@ -3313,7 +3757,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8X",
@@ -3321,7 +3766,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Y",
@@ -3329,7 +3775,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer8Zoom",
@@ -3337,7 +3784,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Crop",
@@ -3345,7 +3793,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9CropX1",
@@ -3353,7 +3802,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9CropX2",
@@ -3361,7 +3811,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9CropY1",
@@ -3369,7 +3820,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9CropY2",
@@ -3377,7 +3829,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Height",
@@ -3385,7 +3838,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9PanX",
@@ -3393,7 +3847,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9PanY",
@@ -3401,7 +3856,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Rectangle",
@@ -3409,7 +3865,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Width",
@@ -3417,7 +3874,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9X",
@@ -3425,7 +3883,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Y",
@@ -3433,7 +3892,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayer9Zoom",
@@ -3441,7 +3901,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerAnimated",
@@ -3449,7 +3910,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicCrop",
@@ -3457,7 +3919,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicCropX1",
@@ -3465,7 +3928,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicCropX2",
@@ -3473,7 +3937,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicCropY1",
@@ -3481,7 +3946,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicCropY2",
@@ -3489,7 +3955,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicHeight",
@@ -3497,7 +3964,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicPanX",
@@ -3505,7 +3973,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicPanY",
@@ -3513,7 +3982,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicRectangle",
@@ -3521,7 +3991,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicWidth",
@@ -3529,7 +4000,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicX",
@@ -3537,7 +4009,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicY",
@@ -3545,7 +4018,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetLayerDynamicZoom",
@@ -3553,7 +4027,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPanX",
@@ -3561,7 +4036,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPanY",
@@ -3569,7 +4045,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPictureEffect",
@@ -3577,7 +4054,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPictureEffectDuration",
@@ -3585,7 +4063,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPictureTransition",
@@ -3593,7 +4072,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetPosition",
@@ -3601,7 +4081,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetRate",
@@ -3609,7 +4090,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetRateSlowMotion",
@@ -3617,7 +4099,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SetZoom",
@@ -3625,21 +4108,24 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SharpenOff",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SharpenOn",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "SwapLayerAnimated",
@@ -3647,7 +4133,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoCallAudioSource",
@@ -3655,7 +4142,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoCallConnect",
@@ -3663,14 +4151,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoCallReconnect",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoCallVideoSource",
@@ -3678,7 +4168,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoDelayStartRecording",
@@ -3686,7 +4177,8 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoDelayStartStopRecording",
@@ -3694,7 +4186,8 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "VideoDelayStopRecording",
@@ -3702,7 +4195,8 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "WaitForCompletion",
@@ -3710,7 +4204,8 @@
     "Parameters": [
       "Input",
       "Duration"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ZoomJoinMeeting",
@@ -3718,14 +4213,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ZoomMuteSelf",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ZoomSelectParticipantByName",
@@ -3733,14 +4230,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "ZoomUnMuteSelf",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Input"
   },
   {
     "Name": "MoveMultiViewOverlay",
@@ -3748,7 +4247,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "MultiViewOverlay",
@@ -3756,7 +4256,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "MultiViewOverlayOff",
@@ -3764,7 +4265,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "MultiViewOverlayOn",
@@ -3772,7 +4274,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1",
@@ -3780,7 +4283,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1In",
@@ -3788,29 +4292,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1Last",
     "Description": "Toggle Overlay1 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1Off",
     "Description": "Immediately switch Overlay1 Off (Cut)",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1Out",
     "Description": "Transition Out Overlay1",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput1Zoom",
     "Description": "Zooms PIP Overlay to fill Fullscreen and vice versa",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2",
@@ -3818,7 +4327,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2In",
@@ -3826,29 +4336,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2Last",
     "Description": "Toggle Overlay2 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput2Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3",
@@ -3856,7 +4371,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3In",
@@ -3864,29 +4380,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3Last",
     "Description": "Toggle Overlay3 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput3Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4",
@@ -3894,7 +4415,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4In",
@@ -3902,29 +4424,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4Last",
     "Description": "Toggle Overlay4 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput4Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5",
@@ -3932,7 +4459,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5In",
@@ -3940,29 +4468,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5Last",
     "Description": "Toggle Overlay5 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput5Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6",
@@ -3970,7 +4503,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6In",
@@ -3978,29 +4512,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6Last",
     "Description": "Toggle Overlay6 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput6Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7",
@@ -4008,7 +4547,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7In",
@@ -4016,29 +4556,34 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7Last",
     "Description": "Toggle Overlay7 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput7Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8",
@@ -4046,7 +4591,8 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8In",
@@ -4054,90 +4600,104 @@
     "Parameters": [
       "Input",
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8Last",
     "Description": "Toggle Overlay8 On/Off with last used Input on this channel",
     "Parameters": [
       "Mix"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8Off",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8Out",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInput8Zoom",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "OverlayInputAllOff",
     "Description": "Immediately switch all Overlays Off",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput1",
     "Description": "Preview Overlay1 using the selected Input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput2",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput3",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput4",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput5",
     "Description": "Preview Overlay5 using the selected Input",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput6",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput7",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "PreviewOverlayInput8",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "SetMultiViewOverlay",
@@ -4145,260 +4705,308 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Overlay"
   },
   {
     "Name": "NextPlayListEntry",
     "Description": "Move to Next Item in a running PlayList",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "PlayList"
   },
   {
     "Name": "PreviousPlayListEntry",
     "Description": "Move to Previous Item in a running PlayList",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "PlayList"
   },
   {
     "Name": "SelectPlayList",
     "Description": "Open PlayList with Name matching Value      Value = PlayList",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "PlayList"
   },
   {
     "Name": "StartPlayList",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "PlayList"
   },
   {
     "Name": "StopPlayList",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "PlayList"
   },
   {
     "Name": "ScriptStart",
     "Description": "Value = Script Name",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Scripting"
   },
   {
     "Name": "ScriptStartDynamic",
     "Description": "Start a dynamic script using code specified as the Value.      Value = Code",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Scripting"
   },
   {
     "Name": "ScriptStop",
     "Description": "Value = Script Name",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Scripting"
   },
   {
     "Name": "ScriptStopAll",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Scripting"
   },
   {
     "Name": "ScriptStopDynamic",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Scripting"
   },
   {
     "Name": "ReplayACamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayACamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayAppendLastEventText",
     "Description": "Value = Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayAppendLastEventTextCamera",
     "Description": "Adds the text to the specified angle (1-4), example: 3,angle3text      Value = Camera,Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayAppendSelectedEventText",
     "Description": "Value = Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayAppendSelectedEventTextCamera",
     "Description": "Adds the text to the specified angle (1-4), example: 3,angle3text      Value = Camera,Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayBCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayChangeDirection",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayChangeSpeed",
@@ -4406,89 +5014,104 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCopyLastEvent",
     "Description": "Value = Event List 0-19",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayCopySelectedEvent",
     "Description": "Value = Event List 0-19",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDeleteLastEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDeleteSelectedEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDuplicateLastEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayDuplicateSelectedEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayExportLastEvent",
@@ -4496,7 +5119,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayFastBackward",
@@ -4504,7 +5128,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayFastForward",
@@ -4512,7 +5137,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpFrames",
@@ -4520,155 +5146,180 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpFramesFastOff",
     "Description": "ReplayJumpFrames jumps 1 frame for each value instead of 1 second.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpFramesFastOn",
     "Description": "ReplayJumpFrames jumps 1 second for each value instead of 1 frame.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpToNow",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpToSelectedInPoint",
     "Description": "Set Position to In point of Selected Event.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayJumpToSelectedOutPoint",
     "Description": "Set Position to Out point of Selected Event.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayLastEventCameraOff",
     "Description": "Turns off the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayLastEventCameraOn",
     "Description": "Turns on the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayLastEventSingleCameraOn",
     "Description": "Turns on only the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayLive",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayLiveToggle",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkCancel",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkIn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInLive",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInOut",
     "Description": "Number of previous seconds to use when creating a new event.      Value = Seconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInOutLive",
     "Description": "Number of previous seconds to use when creating a new event.      Value = Seconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInOutLiveFuture",
     "Description": "Number of seconds into the future to use when creating a new event.      Value = Seconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInOutRecorded",
     "Description": "Number of previous seconds to use when creating a new event.      Value = Seconds",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInRecorded",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkInRecordedNow",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMarkOut",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveLastEvent",
     "Description": "Value = Event List 0-19",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveSelectedEvent",
     "Description": "Value = Event List 0-19",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveSelectedEventDown",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveSelectedEventUp",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveSelectedInPoint",
@@ -4676,7 +5327,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayMoveSelectedOutPoint",
@@ -4684,42 +5336,48 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPause",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlay",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayAllEvents",
     "Description": "Play all Events in active list",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayAllEventsToOutput",
     "Description": "Play all Events in active list",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayBackward",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayEvent",
@@ -4727,7 +5385,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayEventsByID",
@@ -4735,7 +5394,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayEventsByIDToOutput",
@@ -4743,7 +5403,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayEventToOutput",
@@ -4751,363 +5412,418 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayForward",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayLastEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayLastEventToOutput",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayNext",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayPause",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlayPrevious",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlaySelectedEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayPlaySelectedEventToOutput",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayQuadModeOff",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayQuadModeOn",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayRecorded",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayScrollSelectedEvent",
     "Description": "Move back or forward through events list      Value = Count -10-10",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectAllEvents",
     "Description": "Select all events in active channel.",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectChannelA",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectChannelAB",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectChannelB",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectedEventCameraOff",
     "Description": "Turns off the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectedEventCameraOn",
     "Description": "Turns on the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectedEventSingleCameraOn",
     "Description": "Turns on only the specified camera angle (1-8)      Value = Camera",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents1",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents10",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents11",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents12",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents13",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents14",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents15",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents16",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents17",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents18",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents19",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents2",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents20",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents3",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents4",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents5",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents6",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents7",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents8",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectEvents9",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectFirstEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectLastEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectNextEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySelectPreviousEvent",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetAudioSource",
     "Description": "Name as per dropdown box. e.g 'Camera1'      Value = AudioSource",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetChannelAToBTimecode",
     "Description": "Set A Timecode to B Timecode",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetChannelAToBTimecodeAndCamera",
     "Description": "Set A Timecode and Camera to B",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetChannelBToATimecode",
     "Description": "Set B Timecode to A Timecode",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetChannelBToATimecodeAndCamera",
     "Description": "Set B Timecode and Camera to A",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetDirectionBackward",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetDirectionForward",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetLastEventText",
     "Description": "Value = Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetLastEventTextCamera",
     "Description": "Changes the text of the specified angle (1-4), example: 3,angle3text      Value = Camera,Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetSelectedEventText",
     "Description": "Value = Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetSelectedEventTextCamera",
     "Description": "Changes the text of the specified angle (1-4), example: 3,angle3text      Value = Camera,Text",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetSpeed",
@@ -5115,7 +5831,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySetTimecode",
@@ -5123,152 +5840,180 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayShowHide",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayStartRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayStartStopRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayStopEvents",
     "Description": "",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayStopRecording",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplaySwapChannels",
     "Description": "Swap A to B and vice versa, includes angles and playback status.",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleLastEventCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleQuadMode",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera1",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera2",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera3",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera4",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera5",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera6",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera7",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayToggleSelectedEventCamera8",
     "Description": "",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Replay"
   },
   {
     "Name": "ReplayUpdateSelectedInPoint",
     "Description": "Update In point of Selected Event to current Position.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayUpdateSelectedOutPoint",
     "Description": "Update Mark Out point of Selected Event to current Position.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayUpdateSelectedSpeed",
     "Description": "Update Selected Event to use Current Speed.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayUpdateSelectedSpeedDefault",
     "Description": "Update Selected Event to use Default Speed.",
     "Parameters": [
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "ReplayUpdateSelectedSpeedFromValue",
@@ -5276,7 +6021,8 @@
     "Parameters": [
       "Value",
       "Channel"
-    ]
+    ],
+    "Category": "Replay"
   },
   {
     "Name": "NDICommand",
@@ -5284,7 +6030,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "NDI"
   },
   {
     "Name": "NDISelectSourceByIndex",
@@ -5292,7 +6039,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "NDI"
   },
   {
     "Name": "NDISelectSourceByName",
@@ -5300,21 +6048,24 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "NDI"
   },
   {
     "Name": "NDIStartRecording",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "NDI"
   },
   {
     "Name": "NDIStopRecording",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "NDI"
   },
   {
     "Name": "OMTSelectSourceByIndex",
@@ -5322,7 +6073,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "OMT"
   },
   {
     "Name": "OMTSelectSourceByName",
@@ -5330,21 +6082,24 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "OMT"
   },
   {
     "Name": "PTZCreateVirtualInput",
     "Description": "Creates a PTZ Virtual Input with the current Position",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZFocusAuto",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZFocusFar",
@@ -5352,14 +6107,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZFocusManual",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZFocusNear",
@@ -5367,21 +6124,24 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZFocusStop",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZHome",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveDown",
@@ -5389,7 +6149,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveDownLeft",
@@ -5397,7 +6158,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveDownRight",
@@ -5405,7 +6167,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveLeft",
@@ -5413,7 +6176,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveRight",
@@ -5421,21 +6185,24 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveStop",
     "Description": "Stop all PTZ movement",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveToVirtualInputPosition",
     "Description": "Moves to the Position of the PTZ Virtual Input without selecting it into Preview",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveToVirtualInputPositionByIndex",
@@ -5443,7 +6210,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveUp",
@@ -5451,7 +6219,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveUpLeft",
@@ -5459,7 +6228,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZMoveUpRight",
@@ -5467,14 +6237,16 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZUpdateVirtualInput",
     "Description": "Updates selected PTZ Virtual Input with current Position",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZZoomIn",
@@ -5482,7 +6254,8 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZZoomOut",
@@ -5490,138 +6263,158 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "PTZZoomStop",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "PTZ"
   },
   {
     "Name": "LastPreset",
     "Description": "Load the last preset.",
-    "Parameters": null
+    "Parameters": null,
+    "Category": "Preset"
   },
   {
     "Name": "OpenPreset",
     "Description": "Load preset from the specified Filename.      Value = Filename",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Preset"
   },
   {
     "Name": "SavePreset",
     "Description": "Save preset to the specified Filename.      Value = Filename",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "Preset"
   },
   {
     "Name": "DataSourceAutoNextOff",
     "Description": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'      Value = Name,Table",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourceAutoNextOn",
     "Description": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'      Value = Name,Table",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourceAutoNextOnOff",
     "Description": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'      Value = Name,Table",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourceNextRow",
     "Description": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'      Value = Name,Table",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourcePause",
     "Description": "Name of Data Source eg 'Excel/CSV'      Value = Name",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourcePlay",
     "Description": "Name of Data Source eg 'Excel/CSV'      Value = Name",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourcePlayPause",
     "Description": "Name of Data Source eg 'Excel/CSV'      Value = Name",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourcePreviousRow",
     "Description": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'      Value = Name,Table",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "DataSourceSelectRow",
     "Description": "Name of the Data Source, Table Name (optional) and Row Index starting from 0 eg 'Excel/CSV,Sheet1,5'      Value = Name,Table,Index",
     "Parameters": [
       "Value"
-    ]
+    ],
+    "Category": "DataSources"
   },
   {
     "Name": "BrowserBack",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserForward",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserKeyboardDisabled",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserKeyboardEnabled",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserMouseDisabled",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserMouseEnabled",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserNavigate",
@@ -5629,13 +6422,15 @@
     "Parameters": [
       "Value",
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   },
   {
     "Name": "BrowserReload",
     "Description": "",
     "Parameters": [
       "Input"
-    ]
+    ],
+    "Category": "Browser"
   }
 ]

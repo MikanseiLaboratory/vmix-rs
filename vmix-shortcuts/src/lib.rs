@@ -49,12 +49,38 @@ impl Parameter {
     }
 }
 
+/// Official Shortcut Function Reference categories, in table order.
+pub const CATEGORIES: &[&str] = &[
+    "General",
+    "Audio",
+    "Transition",
+    "Output",
+    "Title",
+    "Input",
+    "Overlay",
+    "PlayList",
+    "Scripting",
+    "Replay",
+    "NDI",
+    "OMT",
+    "PTZ",
+    "Preset",
+    "DataSources",
+    "Browser",
+];
+
+/// Official category names in reference order.
+pub fn categories() -> Vec<&'static str> {
+    CATEGORIES.to_vec()
+}
+
 /// One shortcut function.
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Shortcut {
     pub name: String,
     pub description: String,
     pub parameters: Vec<Parameter>,
+    pub category: String,
 }
 
 /// JSON object written to `shortcuts.json`. Field names match vmix-utility.
@@ -66,6 +92,8 @@ pub struct RawShortcut {
     description: String,
     #[serde(rename = "Parameters")]
     parameters: Option<Vec<String>>,
+    #[serde(rename = "Category", default)]
+    category: Option<String>,
 }
 
 /// Every function in the embedded catalog, overrides first.
@@ -100,6 +128,7 @@ impl From<RawShortcut> for Shortcut {
                 .filter(|name| !name.trim().is_empty())
                 .map(|name| Parameter::parse(&name))
                 .collect(),
+            category: raw.category.unwrap_or_default(),
         }
     }
 }
@@ -140,28 +169,31 @@ fn raw(name: &str, description: &str, parameters: &[&str]) -> RawShortcut {
         name: name.to_string(),
         description: description.to_string(),
         parameters: Some(parameters.iter().map(|item| (*item).to_string()).collect()),
+        category: Some("Transition".to_string()),
     }
+}
+
+fn is_category_row(cell: &str) -> bool {
+    let lower = cell.to_ascii_lowercase();
+    lower.contains("background-color: #ccffcc") || lower.contains("background-color:#ccffcc")
 }
 
 /// Read the Shortcut Function Reference HTML.
 ///
-/// Green category rows (`background-color: #ccffcc`) and the column header are skipped.
-/// Override functions are prepended and win over a same-named row.
+/// Green category rows (`background-color: #ccffcc`) set the current category.
+/// The column header is skipped. Override functions are prepended and win over
+/// a same-named row.
 pub fn parse_reference_html(html: &str) -> Vec<RawShortcut> {
     let mut shortcuts = overrides();
     let overridden: Vec<String> = shortcuts.iter().map(|item| item.name.clone()).collect();
+    let mut current_category = String::new();
     for row in html_rows(html) {
         let cells = html_cells(&row);
         if cells.is_empty() {
             continue;
         }
-        if cells[0]
-            .to_ascii_lowercase()
-            .contains("background-color: #ccffcc")
-            || cells[0]
-                .to_ascii_lowercase()
-                .contains("background-color:#ccffcc")
-        {
+        if is_category_row(&cells[0]) {
+            current_category = cell_text(&cells[0]);
             continue;
         }
         let name = cell_text(&cells[0]);
@@ -177,6 +209,11 @@ pub fn parse_reference_html(html: &str) -> Vec<RawShortcut> {
             name,
             description,
             parameters: split_parameters(&parameters),
+            category: if current_category.is_empty() {
+                None
+            } else {
+                Some(current_category.clone())
+            },
         });
     }
     shortcuts
@@ -331,6 +368,7 @@ mod tests {
                 .any(|row| row.name == "Name" || row.name == "General")
         );
         let audio = rows.iter().find(|row| row.name == "Audio").unwrap();
+        assert_eq!(audio.category.as_deref(), Some("General"));
         assert_eq!(
             audio.parameters.as_deref(),
             Some(&["Input".to_string()][..])
@@ -390,5 +428,13 @@ mod tests {
             vec![Parameter::Input]
         );
         assert_eq!(HELP_VERSION, 29);
+        assert_eq!(find("Fade").unwrap().category, "Transition");
+        assert_eq!(find("KeyPress").unwrap().category, "General");
+        assert_eq!(find("Audio").unwrap().category, "Audio");
+        assert!(
+            all().iter().all(|shortcut| !shortcut.category.is_empty()),
+            "every catalog entry should have a category"
+        );
+        assert_eq!(categories(), CATEGORIES.to_vec());
     }
 }
