@@ -17,10 +17,163 @@
     ]
   },
   {
+    "Name": "Zoom",
+    "Description": "Zoom",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "Wipe",
+    "Description": "Wipe",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "Slide",
+    "Description": "Slide",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "Fly",
+    "Description": "Fly",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "CrossZoom",
+    "Description": "CrossZoom",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "FlyRotate",
+    "Description": "FlyRotate",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "Cube",
+    "Description": "Cube",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "CubeZoom",
+    "Description": "CubeZoom",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "VerticalWipe",
+    "Description": "VerticalWipe",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "VerticalSlide",
+    "Description": "VerticalSlide",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
     "Name": "Merge",
     "Description": "Merge",
     "Parameters": [
       "Input",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "WipeReverse",
+    "Description": "WipeReverse",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "SlideReverse",
+    "Description": "SlideReverse",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "VerticalWipeReverse",
+    "Description": "VerticalWipeReverse",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "VerticalSlideReverse",
+    "Description": "VerticalSlideReverse",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "BarnDoor",
+    "Description": "BarnDoor",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "RollerDoor",
+    "Description": "RollerDoor",
+    "Parameters": [
+      "Input",
+      "Mix",
+      "Duration"
+    ]
+  },
+  {
+    "Name": "AlphaFade",
+    "Description": "AlphaFade",
+    "Parameters": [
+      "Input",
+      "Mix",
       "Duration"
     ]
   },
