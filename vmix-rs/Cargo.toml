@@ -22,9 +22,9 @@ full = ["tcp", "http"]
 std = ["vmix-core/std"]
 
 [dev-dependencies]
-tokio = { workspace = true, features = ["rt", "net", "sync", "macros", "rt-multi-thread", "io-util", "io-std", "time", "signal"] }
+tokio = { workspace = true, features = ["rt", "rt-multi-thread", "macros", "sync", "time", "signal"] }
 anyhow.workspace = true
-quick-xml = { workspace = true, features = ["serialize"] }
+quick-xml = { workspace = true }
 
 [lib]
 name = "vmix_rs"

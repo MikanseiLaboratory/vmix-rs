@@ -6,8 +6,6 @@ use vmix_rs::vmix::VmixApi;
 mod tests {
     use super::*;
     use quick_xml::de;
-    #[cfg(feature = "http")]
-    use vmix_rs::models::Vmix;
     use vmix_rs::models::{Input, State};
     use vmix_rs::traits::VmixTcpApiClient;
 

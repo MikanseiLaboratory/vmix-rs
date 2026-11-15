@@ -42,8 +42,8 @@ jobs:
       - name: Check formatting
         run: cargo fmt --all -- --check
 
-      - name: Run clippy (workspace)
-        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Run clippy (workspace, all features)
+        run: cargo clippy --workspace --all-targets --all-features -- -D warnings
 
       - name: Run tests (workspace, all features)
         run: cargo test --workspace --all-features

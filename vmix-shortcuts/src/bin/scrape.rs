@@ -6,7 +6,7 @@
 
 use std::env;
 use std::fs;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
 fn main() -> ExitCode {
@@ -59,14 +59,8 @@ fn main() -> ExitCode {
             return ExitCode::from(1);
         }
     };
-    if let Some(parent) = output.parent() {
-        if let Err(error) = fs::create_dir_all(parent) {
-            eprintln!("failed to create {}: {error}", parent.display());
-            return ExitCode::from(1);
-        }
-    }
-    if let Err(error) = fs::write(&output, format!("{json}\n")) {
-        eprintln!("failed to write {}: {error}", output.display());
+    if let Err(error) = write_json(&output, &json) {
+        eprintln!("{error}");
         return ExitCode::from(1);
     }
     println!(
@@ -75,4 +69,13 @@ fn main() -> ExitCode {
         output.display()
     );
     ExitCode::SUCCESS
+}
+
+fn write_json(output: &Path, json: &str) -> Result<(), String> {
+    if let Some(parent) = output.parent() {
+        fs::create_dir_all(parent)
+            .map_err(|error| format!("failed to create {}: {error}", parent.display()))?;
+    }
+    fs::write(output, format!("{json}\n"))
+        .map_err(|error| format!("failed to write {}: {error}", output.display()))
 }
