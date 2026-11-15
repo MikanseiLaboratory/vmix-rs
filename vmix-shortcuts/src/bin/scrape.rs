@@ -39,7 +39,7 @@ fn main() -> ExitCode {
 
     let url = format!("https://www.vmix.com/help{help_version}/ShortcutFunctionReference.html");
     let html = match ureq::get(&url).call() {
-        Ok(response) => match response.into_string() {
+        Ok(mut response) => match response.body_mut().read_to_string() {
             Ok(body) => body,
             Err(error) => {
                 eprintln!("failed to read {url}: {error}");
