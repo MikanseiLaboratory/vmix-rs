@@ -245,12 +245,6 @@ pub struct List {
     pub item: Vec<ListItem>,
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct ItemClass {
-    #[serde(rename = "_selected")]
-    pub selected: String,
-}
-
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
 pub struct InputOverlay {
     #[serde(rename = "@index")]
@@ -499,33 +493,6 @@ pub struct Crop {
     pub x2: String,
     #[serde(rename = "@Y2")]
     pub y2: String,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub enum Audiobusses {
-    #[serde(rename = "M")]
-    M,
-
-    #[serde(rename = "A")]
-    A,
-
-    #[serde(rename = "B")]
-    B,
-
-    #[serde(rename = "C")]
-    C,
-
-    #[serde(rename = "D")]
-    D,
-
-    #[serde(rename = "E")]
-    E,
-
-    #[serde(rename = "F")]
-    F,
-
-    #[serde(rename = "G")]
-    G,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]

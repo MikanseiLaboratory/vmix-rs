@@ -86,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        crate: [vmix-core, vmix-tcp, vmix-http, vmix-rs]
+        crate: [vmix-core, vmix-tcp, vmix-http, vmix-shortcuts, vmix-rs]
 
     steps:
       - name: Checkout repository
@@ -119,7 +119,7 @@ jobs:
         run: cargo fmt --all -- --check
 
       - name: Run clippy
-        run: cargo clippy --workspace --all-targets -- -D warnings
+        run: cargo clippy --workspace --all-targets --all-features -- -D warnings
 
   build:
     name: Build

@@ -37,6 +37,6 @@ pub fn from_str(s: &str) -> Result<Vmix, quick_xml::DeError> {
 /// let vmix = Vmix { /* ... */ };
 /// let xml = to_string(&vmix)?;
 /// ```
-pub fn to_string(vmix: &Vmix) -> Result<alloc::string::String, quick_xml::DeError> {
+pub fn to_string(vmix: &Vmix) -> Result<alloc::string::String, quick_xml::SeError> {
     quick_xml::se::to_string(vmix)
 }

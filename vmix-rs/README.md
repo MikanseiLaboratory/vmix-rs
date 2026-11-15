@@ -13,6 +13,7 @@ This library is organized into separate crates for different use cases:
 - **vmix-core**: Core data structures (XML parsing optional via `xml` feature)
 - **vmix-tcp**: TCP API client
 - **vmix-http**: HTTP API client (async)
+- **vmix-shortcuts**: Embedded vMix shortcut function catalog
 - **vmix-rs**: Convenience wrapper (this crate)
 
 ## Installation
@@ -22,13 +23,13 @@ This library is organized into separate crates for different use cases:
 ```toml
 [dependencies]
 # Both TCP and HTTP support
-vmix-rs = { version = "0.2.1", features = ["full"] }
+vmix-rs = { version = "0.2.3", features = ["full"] }
 
 # TCP only
-vmix-rs = { version = "0.2.1", features = ["tcp"] }
+vmix-rs = { version = "0.2.3", features = ["tcp"] }
 
 # HTTP only
-vmix-rs = { version = "0.2.1", features = ["http"] }
+vmix-rs = { version = "0.2.3", features = ["http"] }
 ```
 
 ### WebAssembly
@@ -36,7 +37,7 @@ vmix-rs = { version = "0.2.1", features = ["http"] }
 ```toml
 [dependencies]
 # With XML parsing support
-vmix-core = { version = "0.2.1", features = ["xml"] }
+vmix-core = { version = "0.2.3", features = ["xml"] }
 ```
 
 ### Embedded Systems (no_std)
@@ -44,10 +45,10 @@ vmix-core = { version = "0.2.1", features = ["xml"] }
 ```toml
 [dependencies]
 # Struct definitions only (lightweight)
-vmix-core = "0.2.1"
+vmix-core = "0.2.3"
 
 # With XML parsing (if needed)
-vmix-core = { version = "0.2.1", features = ["xml"] }
+vmix-core = { version = "0.2.3", features = ["xml"] }
 ```
 
 ## Usage
