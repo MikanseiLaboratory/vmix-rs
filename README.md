@@ -114,6 +114,11 @@ cargo run --example http_example --features http
 cargo run --example tcp_http_comparison --features full
 ```
 
+## Releasing
+
+The release process (version bump, tag push, crates.io credentials) is documented in
+[docs/RELEASING.md](docs/RELEASING.md).
+
 ## License
 
 MIT
