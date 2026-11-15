@@ -123,6 +123,7 @@
     "Description": "Merge",
     "Parameters": [
       "Input",
+      "Mix",
       "Duration"
     ],
     "Category": "Transition"
