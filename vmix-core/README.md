@@ -24,7 +24,7 @@ use vmix_core::Vmix;
 
 ```toml
 [dependencies]
-vmix-core = { version = "0.1.0", features = ["xml"] }
+vmix-core = { version = "0.2.3", features = ["xml"] }
 ```
 
 ```rust
