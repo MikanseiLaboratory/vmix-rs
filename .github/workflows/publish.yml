@@ -54,8 +54,10 @@ jobs:
           REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
         run: |
           if [ -n "${REGISTRY_TOKEN}" ]; then
+            echo "Using the CARGO_REGISTRY_TOKEN repository secret."
             echo "trusted_publishing=false" >> "$GITHUB_OUTPUT"
           else
+            echo "CARGO_REGISTRY_TOKEN is not set, using crates.io trusted publishing."
             echo "trusted_publishing=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -67,6 +69,7 @@ jobs:
       - name: Publish crates
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN != '' && secrets.CARGO_REGISTRY_TOKEN || steps.auth.outputs.token }}
+          TRUSTED_PUBLISHING: ${{ steps.credentials.outputs.trusted_publishing }}
         run: |
           set -euo pipefail
 
@@ -76,6 +79,21 @@ jobs:
 
           version="$(sed -n 's/^version = "\(.*\)"$/\1/p' Cargo.toml | head -n 1)"
 
+          # crates.io reports a missing permission as 401/403. Retrying cannot
+          # fix that, so fail with the exact configuration that is required.
+          explain_credentials_failure() {
+            local crate="$1"
+            echo "::error::crates.io rejected the credentials for ${crate} ${version}."
+            if [ "${TRUSTED_PUBLISHING}" = "true" ]; then
+              echo "::error::A trusted publishing token can only publish the crates that have a trusted publisher entry for this repository, this workflow filename (publish.yml) and this environment (none)."
+              echo "::error::Add one at https://crates.io/crates/${crate}/settings, or set the CARGO_REGISTRY_TOKEN repository secret to a token that can publish every crate."
+              echo "::error::Note that crates.io requires the first release of a new crate (vmix-shortcuts) to be published with such a token: trusted publishing cannot create a crate."
+            else
+              echo "::error::Check that the CARGO_REGISTRY_TOKEN secret is a valid crates.io API token with the publish-new and publish-update scopes."
+            fi
+            exit 1
+          }
+
           for crate in "${crates[@]}"; do
             echo "::group::Publish ${crate} ${version}"
             if curl -fsS "https://crates.io/api/v1/crates/${crate}/${version}" \
@@ -84,15 +102,32 @@ jobs:
               echo "::endgroup::"
               continue
             fi
+
             published=0
-            for attempt in 1 2 3 4 5 6 7 8 9 10; do
-              if cargo publish -p "${crate}"; then
+            for attempt in 1 2 3 4 5 6; do
+              set +e
+              output="$(cargo publish -p "${crate}" 2>&1)"
+              status=$?
+              set -e
+              printf '%s\n' "${output}"
+
+              if [ "${status}" -eq 0 ]; then
                 published=1
                 break
               fi
+
+              if printf '%s' "${output}" | grep -qiE 'not valid for crate|does not have the required permissions|401 Unauthorized|403 Forbidden'; then
+                explain_credentials_failure "${crate}"
+              fi
+
+              if [ "${attempt}" -eq 6 ]; then
+                break
+              fi
+
               echo "attempt ${attempt} failed for ${crate}; retrying in 15s"
               sleep 15
             done
+
             if [ "${published}" -ne 1 ]; then
               echo "::error::Failed to publish ${crate} ${version}"
               exit 1
