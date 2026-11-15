@@ -86,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        crate: [vmix-core, vmix-tcp, vmix-http, vmix-rs]
+        crate: [vmix-core, vmix-tcp, vmix-http, vmix-shortcuts, vmix-rs]
 
     steps:
       - name: Checkout repository
