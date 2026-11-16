@@ -153,7 +153,7 @@ pub fn overrides() -> Vec<RawShortcut> {
         raw("CubeZoom", "CubeZoom", &transition),
         raw("VerticalWipe", "VerticalWipe", &transition),
         raw("VerticalSlide", "VerticalSlide", &transition),
-        raw("Merge", "Merge", &["Input", "Duration"]),
+        raw("Merge", "Merge", &transition),
         raw("WipeReverse", "WipeReverse", &transition),
         raw("SlideReverse", "SlideReverse", &transition),
         raw("VerticalWipeReverse", "VerticalWipeReverse", &transition),
@@ -413,7 +413,7 @@ mod tests {
         );
         assert_eq!(
             find("Merge").unwrap().parameters,
-            vec![Parameter::Input, Parameter::Duration]
+            vec![Parameter::Input, Parameter::Mix, Parameter::Duration]
         );
         assert_eq!(
             find("Zoom").unwrap().parameters,
