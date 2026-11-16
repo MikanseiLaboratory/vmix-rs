@@ -9,8 +9,8 @@ description = "HTTP API client for vMix"
 readme = "README.md"
 
 [dependencies]
-vmix-core = { path = "../vmix-core", version = "0.2.3", features = ["std", "xml"] }
-vmix-tcp = { path = "../vmix-tcp", version = "0.2.3" }
+vmix-core = { path = "../vmix-core", version = "0.2.4", features = ["std", "xml"] }
+vmix-tcp = { path = "../vmix-tcp", version = "0.2.4" }
 tokio = { workspace = true, features = ["net", "io-util", "time"] }
 shiguredo_http11.workspace = true
 async-trait.workspace = true
